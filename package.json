@@ -1,6 +1,6 @@
 {
   "name": "@octoblu/ble-bean",
-  "version": "2.3.5",
+  "version": "2.3.6",
   "description": "Lightblue Bean BLE Services",
   "main": "index.js",
   "directories": {
@@ -22,7 +22,7 @@
     "sinon-chai": "^2.8.0"
   },
   "scripts": {
-    "test": "istanbul cover _mocha -- -R spec --require coffee-coverage/register-istanbul"
+    "test": "mocha --include test/*.js test/*.js --reporter spec"
   },
   "repository": "https://github.com/jacobrosenthal/ble-bean",
   "keywords": [
