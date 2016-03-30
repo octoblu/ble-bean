@@ -5,6 +5,7 @@ addons:
   apt:
     packages:
     - libbluetooth-dev
+    - libudev-dev
 before_script:
 - npm install -g codeclimate-test-reporter
 after_script:

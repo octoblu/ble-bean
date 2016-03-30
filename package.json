@@ -1,6 +1,6 @@
 {
   "name": "@octoblu/ble-bean",
-  "version": "2.3.3",
+  "version": "2.3.4",
   "description": "Lightblue Bean BLE Services",
   "main": "index.js",
   "directories": {
