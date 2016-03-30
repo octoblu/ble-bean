@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for ble-bean/lib/commands.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">all files</a> / <a href="index.html">ble-bean/lib/</a> commands.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>1/1</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>1/1</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/*jslint node: true */
+"use strict";
+&nbsp;
+//presumably defined here https://github.com/PunchThrough/bean-documentation/blob/master/app_message_types.md
+&nbsp;
+module.exports = {
+&nbsp;
+    MSG_ID_SERIAL_DATA        : new Buffer([0x00, 0x00]),
+    MSG_ID_BT_SET_ADV         : new Buffer([0x05, 0x00]),
+    MSG_ID_BT_SET_CONN        : new Buffer([0x05, 0x02]),
+    MSG_ID_BT_SET_LOCAL_NAME  : new Buffer([0x05, 0x04]),
+    MSG_ID_BT_SET_PIN         : new Buffer([0x05, 0x06]),
+    MSG_ID_BT_SET_TX_PWR      : new Buffer([0x05, 0x08]),
+    MSG_ID_BT_GET_CONFIG      : new Buffer([0x05, 0x10]),
+    MSG_ID_BT_ADV_ONOFF       : new Buffer([0x05, 0x12]),
+    MSG_ID_BT_SET_SCRATCH     : new Buffer([0x05, 0x14]),
+    MSG_ID_BT_GET_SCRATCH     : new Buffer([0x05, 0x15]),
+    MSG_ID_BT_RESTART         : new Buffer([0x05, 0x20]),
+    MSG_ID_GATING             : new Buffer([0x05, 0x50]),
+    MSG_ID_BL_CMD             : new Buffer([0x10, 0x00]),
+    MSG_ID_BL_FW_BLOCK        : new Buffer([0x10, 0x01]),
+    MSG_ID_BL_STATUS          : new Buffer([0x10, 0x02]),
+    MSG_ID_CC_LED_WRITE       : new Buffer([0x20, 0x00]),
+    MSG_ID_CC_LED_WRITE_ALL   : new Buffer([0x20, 0x01]),
+    MSG_ID_CC_LED_READ_ALL    : new Buffer([0x20, 0x02]),
+    MSG_ID_CC_ACCEL_READ      : new Buffer([0x20, 0x10]),
+    MSG_ID_CC_TEMP_READ       : new Buffer([0x20, 0x11]),
+    MSG_ID_AR_SET_POWER       : new Buffer([0x30, 0x00]),
+    MSG_ID_AR_GET_CONFIG      : new Buffer([0x30, 0x06]),
+    MSG_ID_DB_LOOPBACK        : new Buffer([0xFE, 0x00]),
+    MSG_ID_DB_COUNTER         : new Buffer([0xFE, 0x01]),
+&nbsp;
+};</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Wed Mar 30 2016 14:56:11 GMT-0700 (MST)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

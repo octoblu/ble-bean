@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for ble-bean/lib/ScratchTwo.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">all files</a> / <a href="index.html">ble-bean/lib/</a> ScratchTwo.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">73.33% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>11/15</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">40% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>2/5</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/5</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">73.33% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>11/15</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">var SCRATCH_UUID = 'a495ff20-c5b1-4b44-b512-1370f02d74de';
+var SCRATCH_TWO = 'a495ff22-c5b1-4b44-b512-1370f02d74de';
+&nbsp;
+<span class="missing-if-branch" title="else path not taken" >E</span>if(process.platform == 'darwin' || <span class="branch-1 cbranch-no" title="branch not covered" >process.platform == 'linux' </span>|| <span class="branch-2 cbranch-no" title="branch not covered" >process.platform == 'win32')</span>{
+  SCRATCH_UUID = 'a495ff20c5b14b44b5121370f02d74de';
+  SCRATCH_TWO = 'a495ff22c5b14b44b5121370f02d74de';
+}
+&nbsp;
+<span class="fstat-no" title="function not covered" >function ScratchTwo() {</span>
+}
+&nbsp;
+ScratchTwo.prototype.readTwo = <span class="fstat-no" title="function not covered" >function(callback) {</span>
+<span class="cstat-no" title="statement not covered" >  this.readDataCharacteristic(SCRATCH_UUID, SCRATCH_TWO, callback);</span>
+};
+&nbsp;
+ScratchTwo.prototype.writeTwo = <span class="fstat-no" title="function not covered" >function(data, callback) {</span>
+<span class="cstat-no" title="statement not covered" >  this.writeDataCharacteristic(SCRATCH_UUID, SCRATCH_TWO, data, callback);</span>
+};
+&nbsp;
+ScratchTwo.prototype.notifyTwo = <span class="fstat-no" title="function not covered" >function(onRead, callback) {</span>
+<span class="cstat-no" title="statement not covered" >  this.notifyCharacteristic(SCRATCH_UUID, SCRATCH_TWO, true, onRead, callback);</span>
+};
+&nbsp;
+ScratchTwo.prototype.unnotifyTwo = <span class="fstat-no" title="function not covered" >function(onRead, callback) {</span>
+<span class="cstat-no" title="statement not covered" >  this.notifyCharacteristic(SCRATCH_UUID, SCRATCH_TWO, false, onRead, callback);</span>
+};
+&nbsp;
+module.exports = ScratchTwo;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Wed Mar 30 2016 14:56:11 GMT-0700 (MST)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

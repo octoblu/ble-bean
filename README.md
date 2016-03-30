@@ -108,3 +108,8 @@ clean up firmata example
 
 2.1.0
 newer firmwares are gating serial SEND during first x seconds, added unGate function to disable
+[![Build Status](https://travis-ci.org/octoblu/@octoblu/ble-bean.svg?branch=master)](https://travis-ci.org/octoblu/@octoblu/ble-bean)
+[![Code Climate](https://codeclimate.com/github/octoblu/@octoblu/ble-bean/badges/gpa.svg)](https://codeclimate.com/github/octoblu/@octoblu/ble-bean)
+[![Test Coverage](https://codeclimate.com/github/octoblu/@octoblu/ble-bean/badges/coverage.svg)](https://codeclimate.com/github/octoblu/@octoblu/ble-bean)
+[![npm version](https://badge.fury.io/js/@octoblu/ble-bean.svg)](http://badge.fury.io/js/@octoblu/ble-bean)
+[![Gitter](https://badges.gitter.im/octoblu/help.svg)](https://gitter.im/octoblu/help)
